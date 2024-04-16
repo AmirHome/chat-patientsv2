@@ -52,7 +52,7 @@ class UserController extends AppBaseController
         if ($request->ajax()) {
             return Datatables::of((new UserDataTable())->get($request->only(['filter_user', 'privacy_filter'])))->make(true);
         }
-        $roles = Role::pluck('name', 'id')->toArray();
+        $roles = Role::pluck('title', 'id')->toArray();
 
         return view('users.index')->with([
             'roles' => $roles,
@@ -66,7 +66,7 @@ class UserController extends AppBaseController
      */
     public function create(): View
     {
-        $roles = Role::all()->pluck('name', 'id')->toArray();
+        $roles = Role::all()->pluck('title', 'id')->toArray();
 
         return view('users.create')->with(['roles' => $roles]);
     }

@@ -63,7 +63,7 @@ class Role extends Model implements RoleContract
      * @var string[]
      */
     protected $fillable = [
-        'name',
+        'title',
         'guard_name',
         'is_default',
     ];
@@ -85,7 +85,7 @@ class Role extends Model implements RoleContract
      */
     protected $casts = [
         'id' => 'integer',
-        'name' => 'string',
+        'title' => 'string',
         'guard_name' => 'string',
         'is_default' => 'boolean',
     ];
@@ -96,7 +96,7 @@ class Role extends Model implements RoleContract
      * @var array
      */
     public static $rules = [
-        'name' => 'required',
+        'title' => 'required',
         'permissions' => 'required',
     ];
 
@@ -123,7 +123,7 @@ class Role extends Model implements RoleContract
     {
         $guardName = $guardName ?? Guard::getDefaultName(static::class);
 
-        $role = static::where('name', $name)->where('guard_name', $guardName)->first();
+        $role = static::where('title', $name)->where('guard_name', $guardName)->first();
 
         if (! $role) {
             throw RoleDoesNotExist::named($name);
@@ -152,10 +152,10 @@ class Role extends Model implements RoleContract
     {
         $guardName = $guardName ?? Guard::getDefaultName(static::class);
 
-        $role = static::where('name', $name)->where('guard_name', $guardName)->first();
+        $role = static::where('title', $name)->where('guard_name', $guardName)->first();
 
         if (! $role) {
-            return static::query()->create(['name' => $name, 'guard_name' => $guardName]);
+            return static::query()->create(['title' => $name, 'guard_name' => $guardName]);
         }
 
         return $role;
@@ -165,8 +165,8 @@ class Role extends Model implements RoleContract
     {
         $attributes['guard_name'] = $attributes['guard_name'] ?? Guard::getDefaultName(static::class);
 
-        if (static::where('name', $attributes['name'])->where('guard_name', $attributes['guard_name'])->first()) {
-            throw RoleAlreadyExists::create($attributes['name'], $attributes['guard_name']);
+        if (static::where('title', $attributes['title'])->where('guard_name', $attributes['guard_name'])->first()) {
+            throw RoleAlreadyExists::create($attributes['title'], $attributes['guard_name']);
         }
 
         return static::query()->create($attributes);

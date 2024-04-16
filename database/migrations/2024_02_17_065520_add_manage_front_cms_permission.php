@@ -16,7 +16,7 @@ return new class extends Migration
             'display_name' => 'Manage Front CMS',
             'guard_name' => 'web',
         ]);
-        $role = Role::where('name', 'Admin')->first();
+        $role = Role::where('title', 'Admin')->first();
         $role->givePermissionTo($permission);
     }
 
@@ -25,7 +25,7 @@ return new class extends Migration
      */
     public function down(): void
     {
-        $role = Role::where('name', 'Admin')->first();
+        $role = Role::where('title', 'Admin')->first();
         $role->revokePermissionTo('manage_front_cms');
         Permission::where('name', 'manage_front_cms')->delete();
     }

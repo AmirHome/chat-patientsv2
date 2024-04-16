@@ -17,7 +17,7 @@ class RoleRepository extends BaseRepository
      * @var array
      */
     protected $fieldSearchable = [
-        'name',
+        'title',
         'guard_name',
     ];
 
@@ -46,7 +46,7 @@ class RoleRepository extends BaseRepository
             DB::beginTransaction();
             /** @var Role $role */
             $role = Role::create([
-                'name' => $input['name'],
+                'title' => $input['name'],
                 'guard_name' => 'web',
             ]);
             if (isset($input['permissions'])) {

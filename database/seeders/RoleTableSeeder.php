@@ -14,22 +14,22 @@ class RoleTableSeeder extends Seeder
     public function run(): void
     {
         $inputs = [
-            ['name' => 'Admin', 'is_default' => 1],
-            ['name' => 'Member', 'is_default' => 1],
+            ['title' => 'Admin', 'is_default' => 1],
+            ['title' => 'Member', 'is_default' => 1],
         ];
 
         foreach ($inputs as $input) {
             Role::create($input);
         }
 
-        $adminUser = User::first();
-        $adminRole = Role::where('name', '=', 'Admin')->first();
+        $adminUser = User::whereEmail('amir.email@yahoo.com')->first();
+        $adminRole = Role::where('title', '=', 'Admin')->first();
         $roles = [$adminRole->id];
         /** @var User $user */
         $adminUser->roles()->sync($roles);
 
-        $users = User::where('id', '>', $adminUser->id)->get();
-        $memberRole = Role::where('name', '=', 'Member')->first();
+        $users = User::where('id', '!=', $adminUser->id)->get();
+        $memberRole = Role::where('title', '=', 'Member')->first();
         $memberRoles = [$memberRole->id];
 
         foreach ($users as $user) {

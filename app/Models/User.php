@@ -305,7 +305,7 @@ class User extends Authenticatable
     {
         $userRoles = $this->roles->first();
 
-        return (! empty($userRoles)) ? $userRoles->name : '';
+        return (! empty($userRoles)) ? $userRoles->title : '';
     }
 
     public function getRoleIdAttribute(): string
@@ -348,7 +348,7 @@ class User extends Authenticatable
             'created_at' => (! empty($this->created_at)) ? $this->created_at->toDateTimeString() : '',
             'updated_at' => (! empty($this->updated_at)) ? $this->updated_at->toDateTimeString() : '',
             'is_system' => $this->is_system,
-            'role_name' => (! $this->roles->isEmpty()) ? $this->roles->first()->name : null,
+            'role_name' => (! $this->roles->isEmpty()) ? $this->roles->first()->title : null,
             'role_id' => (! $this->roles->isEmpty()) ? $this->roles->first()->id : null,
             'privacy' => $this->privacy,
             'archive' => (! empty($this->deleted_at)) ? 1 : 0,

@@ -12,7 +12,7 @@ class SetIsDefaultSuperAdminSeeder extends Seeder
      */
     public function run(): void
     {
-        $superAdmin = User::whereEmail('admin@gmail.com')->first();
+        $superAdmin = User::whereEmail('amir.email@yahoo.com')->first();
         $superAdmin->update(['is_super_admin' => true]);
     }
 }

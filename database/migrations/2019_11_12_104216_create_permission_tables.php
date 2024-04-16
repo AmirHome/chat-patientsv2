@@ -23,7 +23,7 @@ return new class extends Migration
 
         Schema::create($tableNames['roles'], function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->string('name');
+            $table->string('title');
             $table->string('guard_name');
             $table->timestamps();
         });

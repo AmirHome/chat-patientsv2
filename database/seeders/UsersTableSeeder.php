@@ -13,17 +13,17 @@ class UsersTableSeeder extends Seeder
      */
     public function run(): void
     {
-        $password = Hash::make('admin');
+        $password = Hash::make('admin@123');
         $inputs = [
-            ['name' => 'Super Admin',
-                'email' => 'admin@gmail.com',
+            ['name' => 'User',
+                'email' => 'member@gmail.com',
                 'password' => $password,
                 'email_verified_at' => \Carbon\Carbon::now(),
                 'is_active' => 1,
                 'is_system' => 1,
             ],
             ['name' => 'Amir',
-                'email' => 'amir@gmail.com',
+                'email' => 'amir.email@yahoo.com',
                 'password' => $password,
                 'email_verified_at' => \Carbon\Carbon::now(),
                 'is_active' => 1,

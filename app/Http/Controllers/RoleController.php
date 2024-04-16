@@ -34,7 +34,7 @@ class RoleController extends AppBaseController
      * @throws Exception
      */
     public function index(Request $request)
-    {
+    {//dd('index');
         if ($request->ajax()) {
             return Datatables::of((new RoleDataTable())->get())->make(true);
         }

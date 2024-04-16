@@ -53,9 +53,9 @@ class CreatePermissionSeeder extends Seeder
         $roles = Role::all();
         foreach ($roles as $role) {
             $role->update(['guard_name' => 'web']);
-            if ($role->name == 'Admin') {
+            if ($role->title == 'Admin') {
                 $role->syncPermissions(Permission::pluck('title'));
-            } elseif ($role->name == 'Member') {
+            } elseif ($role->title == 'Member') {
                 $role->syncPermissions(['manage_conversations', 'manage_meetings']);
             } else {
                 $role->syncPermissions(['manage_conversations']);
