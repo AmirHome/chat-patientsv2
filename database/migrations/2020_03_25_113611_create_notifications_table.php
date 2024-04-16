@@ -11,7 +11,7 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('notifications', function (Blueprint $table) {
+        Schema::create('chat_notifications', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('owner_id');
             $table->string('owner_type');
@@ -31,6 +31,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('notifications');
+        Schema::dropIfExists('chat_notifications');
     }
 };

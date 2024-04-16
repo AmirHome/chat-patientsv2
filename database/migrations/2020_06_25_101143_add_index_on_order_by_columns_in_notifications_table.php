@@ -11,7 +11,7 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::table('notifications', function (Blueprint $table) {
+        Schema::table('chat_notifications', function (Blueprint $table) {
             $table->index(['created_at']);
         });
     }
@@ -21,7 +21,7 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::table('notifications', function (Blueprint $table) {
+        Schema::table('chat_notifications', function (Blueprint $table) {
             $table->dropIndex(['created_at']);
         });
     }

@@ -53,7 +53,7 @@ class Notification extends Model
     /**
      * @var string
      */
-    protected $table = 'notifications';
+    protected $table = 'chat_notifications';
 
     /**
      * @var string[]

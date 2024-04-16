@@ -36,7 +36,7 @@ class Setting extends Model
     /**
      * @var string
      */
-    protected $table = 'settings';
+    protected $table = 'chat_settings';
 
     /**
      * @var string[]

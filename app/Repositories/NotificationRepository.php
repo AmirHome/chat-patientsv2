@@ -93,10 +93,10 @@ class NotificationRepository extends BaseRepository
         $notifications = Notification::whereIsRead(0)->whereToId(getLoggedInUserId())->with([
             'sender', 'group', 'latestMsg',
         ])->selectRaw(
-            'max(notifications.id) as latest_id,
-            sum(if(notifications.is_read = 0, 1, 0)) as unread_count,
-            notifications.*'
-        )->orderBy('notifications.created_at', 'desc')->groupBy('owner_id')->get();
+            'max(chat_notifications.id) as latest_id,
+            sum(if(chat_notifications.is_read = 0, 1, 0)) as unread_count,
+            chat_notifications.*'
+        )->orderBy('chat_notifications.created_at', 'desc')->groupBy('owner_id')->get();
 
 
         $notificationsArray = [];
