@@ -11,10 +11,10 @@
     <div class="row px-3">
         @foreach($permissions->get() as $permission)
             <div class="custom-control custom-checkbox mb-2">
-                <input id="{{ $permission->name }}" class="custom-control-input not-checkbox role-permission"
+                <input id="{{ $permission->title }}" class="custom-control-input not-checkbox role-permission"
                        type="checkbox" name="permissions[]"
-                       value="{{ $permission->name }}">
-                <label for="{{ $permission->name }}"
+                       value="{{ $permission->title }}">
+                <label for="{{ $permission->title }}"
                        class="custom-control-label">{{ $permission->display_name }}</label>
             </div>
         @endforeach

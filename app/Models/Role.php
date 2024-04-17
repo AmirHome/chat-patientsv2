@@ -102,7 +102,7 @@ class Role extends Model implements RoleContract
 
     public function users(): MorphToMany
     {
-        return $this->morphedByMany(User::class, 'model', 'model_has_roles', 'role_id', 'model_id');
+        return $this->morphedByMany(User::class, 'model', 'role_user', 'role_id', 'user_id');
     }
 
     public function __construct(array $attributes = [])

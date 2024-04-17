@@ -11,10 +11,10 @@
 <div class="row px-3">
     @foreach($permissions->get() as $permission)
         <div class="custom-control custom-checkbox mb-2">
-            <input id="{{ $permission->name }}" class="custom-control-input not-checkbox role-permission"
+            <input id="{{ $permission->title }}" class="custom-control-input not-checkbox role-permission"
                    type="checkbox" name="permissions[]"
-                   value="{{ $permission->name }}" {{ (isset($role) && in_array($permission->name,$role->getAllPermissions()->pluck('name')->toArray())) ? 'checked' : '' }} >
-            <label for="{{ $permission->name }}" class="custom-control-label">{{ $permission->display_name }}</label>
+                   value="{{ $permission->title }}" {{ (isset($role) && in_array($permission->title,$role->getAllPermissions()->pluck('name')->toArray())) ? 'checked' : '' }} >
+            <label for="{{ $permission->title }}" class="custom-control-label">{{ $permission->display_name }}</label>
         </div>
     @endforeach
 </div>

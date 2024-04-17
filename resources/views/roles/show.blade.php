@@ -32,7 +32,7 @@
                                 <div class="form-group col-sm-12">
                                     {{ Form::label('name', __('messages.name'), ['class' => 'fw-bold login-group__sub-title']) }}
                                     <br>
-                                    <span>{{ $role->name ?? 'N/A' }}</span>
+                                    <span>{{ $role->title ?? 'N/A' }}</span>
                                 </div>
                                 <div class="form-group col-sm-12">
                                     {{ Form::label('permissions', __('messages.permissions'), ['class' => 'fw-bold login-group__sub-title']) }}
