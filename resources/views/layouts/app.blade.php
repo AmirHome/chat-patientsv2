@@ -207,7 +207,7 @@
 <script src="{{ asset('assets/js/notification.js') }}"></script>
 <script src="{{ asset('assets/js/set_user_status.js') }}"></script>
 <script src="{{ asset('assets/js/set-user-on-off.js') }}"></script>
-<script src="{{mix('assets/js/profile.js')}}"></script>
+<script src="{{ asset('assets/js/profile.js')}}"></script>
 @livewireScripts
 @stack('scripts')
 @yield('scripts')
