@@ -1,8 +1,8 @@
-/node_modules
-/public/hot
-/public/assets
-/public/fonts
-/public/storage
+# /node_modules
+# /public/hot
+# /public/assets
+# /public/fonts
+# /public/storage
 /storage/*.key
 
 .env
