@@ -3,7 +3,7 @@
     {{ __('messages.new_keys.front_cms') }}
 @endsection
 @section('page_css')
-    <link rel="stylesheet" href="{{ mix('assets/css/admin_panel.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/admin_panel.css') }}">
 @endsection
 @section('content')
     <div class="container-fluid page__container">
@@ -346,5 +346,5 @@
     </div>
 @endsection
 @section('scripts')
-    <script src="{{ mix('assets/js/admin/front_cms/front-cms.js') }}"></script>
+    <script src="{{ asset('assets/js/admin/front_cms/front-cms.js') }}"></script>
 @endsection

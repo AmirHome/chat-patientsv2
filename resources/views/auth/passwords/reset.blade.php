@@ -6,7 +6,7 @@
     - {{ __('messages.reset_password') }}
 @endsection
 @section('page_css')
-    <link rel="stylesheet" href="{{ mix('assets/css/simple-line-icons.css')}}">
+    <link rel="stylesheet" href="{{ asset('assets/css/simple-line-icons.css')}}">
 @endsection
 @section('content')
 <div class="container">

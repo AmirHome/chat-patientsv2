@@ -15,24 +15,24 @@
     <!-- Bootstrap-->
     <link rel="stylesheet" href="{{ asset('assets/css/bootstrap.min.css') }}">
     <!-- Theme style -->
-    <link rel="stylesheet" href="{{ mix('assets/css/coreui.min.css') }}">
-    <link rel="stylesheet" href="{{ mix('assets/css/font-awesome.css') }}">
-    <link rel="stylesheet" href="{{ mix('assets/css/jquery.toast.min.css') }}">
-    <link rel="stylesheet" href="{{ mix('assets/css/custom-style.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/coreui.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/font-awesome.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/jquery.toast.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/custom-style.css') }}">
     @yield('page_css')
     @yield('css')
 </head>
 <body class="app flex-row align-items-center">
 @yield('content')
 <!-- CoreUI and necessary plugins-->
-<script src="{{ mix('assets/js/jquery.min.js') }}"></script>
-<script src="{{ mix('assets/js/popper.min.js') }}"></script>
+<script src="{{ asset('assets/js/jquery.min.js') }}"></script>
+<script src="{{ asset('assets/js/popper.min.js') }}"></script>
 <script src="{{ asset('assets/js/bootstrap.bundle.min.js') }}"></script>
-<script src="{{ mix('assets/js/coreui.min.js') }}"></script>
-<script src="{{ mix('assets/js/perfect-scrollbar.min.js') }}"></script>
-<script src="{{ mix('assets/js/jquery.toast.min.js') }}"></script>
-<script src="{{ mix('assets/js/auth-forms.js') }}"></script>
-<script src="{{ mix('assets/js/custom.js') }}"></script>
+<script src="{{ asset('assets/js/coreui.min.js') }}"></script>
+<script src="{{ asset('assets/js/perfect-scrollbar.min.js') }}"></script>
+<script src="{{ asset('assets/js/jquery.toast.min.js') }}"></script>
+<script src="{{ asset('assets/js/auth-forms.js') }}"></script>
+<script src="{{ asset('assets/js/custom.js') }}"></script>
 <script src="{{ asset('sw.js') }}"></script>
 <script>
     $(document).ready(function () {

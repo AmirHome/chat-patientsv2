@@ -16,13 +16,13 @@
     <link rel="manifest" href="{{ asset('manifest.json') }}">
     <!-- favicon -->
     <link rel="shortcut icon" href="{{getFaviconUrl()}}">
-    <link rel="stylesheet" href="{{ mix('assets/css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/bootstrap.min.css') }}">
     <!-- google font -->
     <link href="//fonts.googleapis.com/css?family=Poppins:400,500,700&display=swap" rel="stylesheet">
     <!-- font awesome version 4.7 -->
-    <link rel="stylesheet" href="{{ mix('assets/css/font-awesome.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/font-awesome.css') }}">
     <!-- custom css -->
-    <link rel="stylesheet" href="{{ mix('assets/css/landing-page-style.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/landing-page-style.css') }}">
 </head>
 <body>
 <!--header start-->

@@ -5,8 +5,8 @@
 @section('page_css')
     <link rel="stylesheet" href="{{ asset('css/dropzone.css') }}">
     <link rel="stylesheet" href="{{ asset('css/yBox.min.css') }}">
-    <link rel="stylesheet" href="{{ mix('assets/css/video-js.css') }}">
-    <link rel="stylesheet" href="{{ mix('assets/css/new-conversation.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/video-js.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/new-conversation.css') }}">
 @endsection
 @section('content')
     <div class="page-container">
@@ -201,7 +201,7 @@
     <script src="{{ asset('js/dropzone.min.js') }}"></script>
     <script src="{{ asset('js/directive.min.js') }}"></script>
     <script src="{{ asset('js/yBox.min.js') }}"></script>
-    <script src="{{ mix('assets/js/video.min.js') }}"></script>
+    <script src="{{ asset('assets/js/video.min.js') }}"></script>
 @endsection
 @section('scripts')
     <!--custom js-->
@@ -235,5 +235,5 @@
         let groupMembers = []
         let checkShowNameChat = "{{ checkShowNameChat() }}"
     </script>
-    <script src="{{ mix('assets/js/chat.js') }}"></script>
+    <script src="{{ asset('assets/js/chat.js') }}"></script>
 @endsection

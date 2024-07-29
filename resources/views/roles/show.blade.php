@@ -5,7 +5,7 @@
 @section('page_css')
 @endsection
 @section('css')
-    <link rel="stylesheet" href="{{ mix('assets/css/admin_panel.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/admin_panel.css') }}">
 @endsection
 @section('content')
     <div class="container-fluid page__container">

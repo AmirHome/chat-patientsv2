@@ -16,23 +16,23 @@
     <!-- Bootstrap 4.1.3 -->
     <link rel="stylesheet" href="{{ asset('assets/css/bootstrap.min.css') }}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.2/css/select2.min.css">
-    <link rel="stylesheet" href="{{ mix('assets/css/coreui.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/coreui.min.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/icheck/skins/all.css') }}">
     <link rel="stylesheet" href="{{ asset('css/datetime-picker.css') }}"/>
-    <link rel="stylesheet" href="{{ mix('assets/css/jquery.toast.min.css') }}">
-    <script src="{{ mix('assets/js/jquery.min.js') }}"></script>
+    <link rel="stylesheet" href="{{ asset('assets/css/jquery.toast.min.css') }}">
+    <script src="{{ asset('assets/js/jquery.min.js') }}"></script>
     <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
     @if(getLoggedInUser()->is_subscribed)
         @include('layouts.one_signal')
     @endif
     @livewireStyles
     @routes
-    <link rel="stylesheet" href="{{ mix('assets/css/font-awesome.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/font-awesome.css') }}">
     <link rel="stylesheet" href="{{ asset('css/emojionearea.min.css') }}">
     @yield('page_css')
-    <link rel="stylesheet" href="{{ mix('assets/css/style.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
     @yield('css')
-    <link rel="stylesheet" href="{{ mix('assets/css/custom-style.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/custom-style.css') }}">
 </head>
 <body class="app header-fixed sidebar-fixed aside-menu-fixed sidebar-lg-show">
 <header class="app-header navbar">
@@ -138,9 +138,9 @@
 <!-- jQuery 3.1.1 -->
 <script src="{{ asset('messages.js') }}"></script>
 <script src="{{ asset('assets/js/bootstrap.bundle.min.js') }}"></script>
-<script src="{{ mix('assets/js/coreui.min.js') }}"></script>
-<script src="{{ mix('assets/js/jquery.toast.min.js') }}"></script>
-<script src="{{ mix('assets/js/sweetalert2.all.min.js') }}"></script>
+<script src="{{ asset('assets/js/coreui.min.js') }}"></script>
+<script src="{{ asset('assets/js/jquery.toast.min.js') }}"></script>
+<script src="{{ asset('assets/js/sweetalert2.all.min.js') }}"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.2/js/select2.min.js"></script>
 <script src="{{ asset('js/moment.min.js') }}"></script>
 <script src="{{ asset('assets/js/moment-with-locales.min.js') }}"></script>
@@ -148,7 +148,7 @@
 <script src="{{ asset('assets/icheck/icheck.min.js') }}"></script>
 <script src="https://www.jsviews.com/download/jsviews.min.js"></script>
 <script src="{{ asset('js/emojionearea.js') }}"></script>
-<script src="{{ mix('assets/js/emojione.min.js') }}"></script>
+<script src="{{ asset('assets/js/emojione.min.js') }}"></script>
 <script type="text/javascript" src="{{ asset('js/datetime-picker.js') }}"></script>
 <script src="{{ asset('js/bootstrap-datetimepicker.min.js') }}"></script>
 <script src="{{ asset('sw.js') }}"></script>
@@ -202,11 +202,11 @@
         $('.alert').delay(4000).slideUp(300);
     });
 </script>
-<script src="{{ mix('assets/js/app.js') }}"></script>
-<script src="{{ mix('assets/js/custom.js') }}"></script>
-<script src="{{ mix('assets/js/notification.js') }}"></script>
-<script src="{{ mix('assets/js/set_user_status.js') }}"></script>
-<script src="{{ mix('assets/js/set-user-on-off.js') }}"></script>
+<script src="{{ asset('assets/js/app.js') }}"></script>
+<script src="{{ asset('assets/js/custom.js') }}"></script>
+<script src="{{ asset('assets/js/notification.js') }}"></script>
+<script src="{{ asset('assets/js/set_user_status.js') }}"></script>
+<script src="{{ asset('assets/js/set-user-on-off.js') }}"></script>
 <script src="{{mix('assets/js/profile.js')}}"></script>
 @livewireScripts
 @stack('scripts')

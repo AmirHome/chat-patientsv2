@@ -6,7 +6,7 @@
     <link rel="stylesheet" type="text/css" href="{{ asset('css/dataTable.min.css') }}"/>
 @endsection
 @section('css')
-    <link rel="stylesheet" href="{{ mix('assets/css/admin_panel.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/admin_panel.css') }}">
 @endsection
 @section('content')
     <div class="container-fluid page__container">
@@ -61,8 +61,8 @@
     <script>
         let defaultImageAvatar = "{{ getDefaultAvatar() }}"
     </script>
-    <script src="{{ mix('assets/js/admin/users/user.js') }}"></script>
-    <script src="{{ mix('assets/js/admin/users/edit_user.js') }}"></script>
+    <script src="{{ asset('assets/js/admin/users/user.js') }}"></script>
+    <script src="{{ asset('assets/js/admin/users/edit_user.js') }}"></script>
     <script type="text/javascript" src="{{ asset('assets/js/custom-datatables.js') }}"></script>
 @endsection
 

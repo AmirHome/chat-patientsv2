@@ -3,7 +3,7 @@
     {{ __('messages.edit_meeting') }}
 @endsection
 @section('page_css')
-    <link rel="stylesheet" href="{{ mix('assets/css/admin_panel.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/admin_panel.css') }}">
 @endsection
 @section('content')
     <div class="container-fluid page__container">
@@ -34,5 +34,5 @@
     </div>
 @endsection
 @section('scripts')
-    <script src="{{ mix('assets/js/admin/meetings/meetings.js') }}"></script>
+    <script src="{{ asset('assets/js/admin/meetings/meetings.js') }}"></script>
 @endsection

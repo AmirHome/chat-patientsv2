@@ -3,9 +3,9 @@
     {{__('messages.roles')}}
 @endsection
 @section('page_css')
-    <link rel="stylesheet" href="{{ mix('assets/css/jquery.toast.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/jquery.toast.min.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ asset('css/dataTable.min.css') }}"/>
-    <link rel="stylesheet" href="{{ mix('assets/css/admin_panel.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/admin_panel.css') }}">
 @endsection
 @section('content')
     <div class="container-fluid page__container">
@@ -35,7 +35,7 @@
 @endsection
 @section('page_js')
     <script type="text/javascript" src="{{ asset('js/dataTable.min.js') }}"></script>
-    <script src="{{ mix('assets/js/jquery.toast.min.js') }}"></script>
+    <script src="{{ asset('assets/js/jquery.toast.min.js') }}"></script>
 @endsection
 @section('scripts')
     <script type="text/javascript" src="{{ asset('assets/js/custom-datatables.js') }}"></script>
@@ -43,7 +43,7 @@
         let token = '{{ csrf_token() }}'
         let AuthUserRoleId = "{{ isset(getLoggedInUser()->roles) ? getLoggedInUser()->roles->first()->id : '' }}"
     </script>
-    <script src="{{ mix('assets/js/admin/roles/role.js') }}"></script>
-    <script src="{{ mix('assets/js/custom.js') }}"></script>
+    <script src="{{ asset('assets/js/admin/roles/role.js') }}"></script>
+    <script src="{{ asset('assets/js/custom.js') }}"></script>
 @endsection
 
