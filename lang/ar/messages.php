@@ -178,6 +178,7 @@ return [
 
     //file_pload.blade
     'upload_files' => 'تحميل الملفات',
+    'upload_instructions' => 'اسحب وأسقط الملفات هنا أو انقر لتحميل.',
     'upload' => 'تحميل',
     'cancel' => 'يلغي',
 
@@ -323,7 +324,8 @@ return [
         'meeting_title' => 'عنوان الاجتماع',
         'meeting_date' => 'تاريخ الاجتماع',
         'time_zone' => 'وحدة زمنية',
-        'meeting_duration' => 'مدة الاجتماع (بالدقائق)',
+        'meeting_duration' => 'مدة الاجتماع ',
+        'meeting_duration_minutes' => 'مدة الاجتماع (بالدقائق)',
         'staff_list' => 'قائمة الموظفين',
         'host_video' => 'استضافة الفيديو',
         'client_video' => 'فيديو العميل',

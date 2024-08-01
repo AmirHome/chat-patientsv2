@@ -177,6 +177,7 @@ return [
 
     //file_pload.blade
     'upload_files' => 'Загрузить файлы',
+    "upload_instruction" => "Перетащите файлы сюда или нажмите, чтобы загрузить",
     'upload' => 'Загрузить',
     'cancel' => 'Отмена',
 
@@ -323,7 +324,8 @@ return [
         'meeting_title' => 'Название встречи',
         'meeting_date' => 'Дата встречи',
         'time_zone' => 'Часовой пояс',
-        'meeting_duration' => 'Продолжительность встречи (в минутах)',
+        'meeting_duration' => 'Продолжительность встречи',
+        'meeting_duration_minutes' => 'Продолжительность встречи (минуты)',
         'staff_list' => 'Список сотрудников',
         'host_video' => 'Хост видео',
         'client_video' => 'Клиентское видео',

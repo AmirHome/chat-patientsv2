@@ -178,6 +178,7 @@ return [
 
     //file_pload.blade
     'upload_files' => 'Dosyaları yükle',
+    "upload_instruction" => "Yüklemek istediğiniz dosyaları buraya sürükleyin veya tıklayın",
     'upload' => 'Yükle',
     'cancel' => 'İptal etmek',
 
@@ -324,7 +325,8 @@ return [
         'meeting_title' => 'Toplantı Başlığı',
         'meeting_date' => 'Buluşma tarihi',
         'time_zone' => 'Saat dilimi',
-        'meeting_duration' => 'Toplantı Süresi (Dakika Olarak)',
+        'meeting_duration' => 'Toplantı Süresi',
+        'meeting_duration_minutes' => 'Toplantı Süresi (Dakika)',
         'staff_list' => 'Personel listesi',
         'host_video' => 'Video Barındırma',
         'client_video' => 'Müşteri Videosu',

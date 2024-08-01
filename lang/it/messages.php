@@ -178,6 +178,7 @@ return [
 
     //file_pload.blade
     'upload_files' => 'Caricare files',
+    "upload_instruction"=> "Trascina e rilascia i file qui o fai clic per caricare",
     'upload' => 'Caricare',
     'cancel' => 'Annulla',
 
@@ -324,7 +325,8 @@ return [
         'meeting_title' => 'Titolo incontro',
         'meeting_date' => 'Data dell\'incontro',
         'time_zone' => 'Fuso orario',
-        'meeting_duration' => 'Durata della riunione (in minuti)',
+        'meeting_duration' => 'Durata della riunione',
+        'meeting_duration_minutes' => 'Durata della riunione (minuti)',
         'staff_list' => 'Elenco del personale',
         'host_video' => 'Presenta video',
         'client_video' => 'Video del cliente',

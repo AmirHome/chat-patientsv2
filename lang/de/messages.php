@@ -177,7 +177,8 @@ return [
 
     //file_pload.blade
     'upload_files' => 'Daten hochladen',
-    'upload' => 'Hochladen',
+    'upload_instructions' => 'Ziehen Sie Dateien hierher oder klicken Sie, um Dateien hochzuladen',
+    'upload'=> 'Hochladen',
     'cancel' => 'Stornieren',
 
     //users files
@@ -323,7 +324,8 @@ return [
         'meeting_title' => 'Titel der Besprechung',
         'meeting_date' => 'Datum des Treffens',
         'time_zone' => 'Zeitzone',
-        'meeting_duration' => 'Besprechungsdauer (in Minuten)',
+        'meeting_duration' => 'Besprechungsdauer',
+        'meeting_duration_minutes' => 'Besprechungsdauer (Minuten...)',
         'staff_list' => 'Mitarbeiterliste',
         'host_video' => 'Host-Video',
         'client_video' => 'Client-Video',

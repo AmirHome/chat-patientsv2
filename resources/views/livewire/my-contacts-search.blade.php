@@ -3,7 +3,7 @@
     <input type="search" class="form-control search-input login-group__input" id="searchMyContactForChat"
            placeholder="{{ __('messages.search') }}..." wire:model="searchTerm">
 </form>
-<div class="form-group">
+{{-- <div class="form-group">
     <div class="col-sm-12">
         <div class="custom-control custom-checkbox contact-checkbox">
             <input name="my_contacts_filter" value="1" type="checkbox" class="custom-control-input group-type not-checkbox"
@@ -26,7 +26,7 @@
             <label class="custom-control-label" for="offline">{{ __('messages.offline') }}</label>
         </div>
     </div>
-</div>
+</div> --}}
     <div id="myContactListForAddPeople">
         <ul class="list-group user-list-chat-select list-with-filter" id="myContactListForChat">
             @foreach($users as $key => $user)

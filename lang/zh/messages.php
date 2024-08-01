@@ -178,6 +178,7 @@ return [
 
     //file_pload.blade
     'upload_files' => '上傳文件',
+        "upload_instruction" => "拖放文件到此处或单击以上传",
     'upload' => '上載',
     'cancel' => '取消',
 
@@ -324,7 +325,7 @@ return [
         'meeting_title' => '會議標題',
         'meeting_date' => '會議日期',
         'time_zone' => '時區',
-        'meeting_duration' => '會議時間（以分鐘為單位）',
+        'meeting_duration' => '會議時間',
         'staff_list' => '員工名單',
         'host_video' => '主持人影片',
         'client_video' => '客戶影片',

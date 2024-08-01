@@ -1,4 +1,4 @@
-<div class="sidebar">
+{{-- <div class="sidebar">
     <nav class="sidebar-nav">
         <div class="d-flex align-items-center justify-content-between mb-3 overflow-hidden sidebar-inner-header">
             <a class="navbar-brand d-flex align-items-center" href="{{url('/')}}" target="_blank">
@@ -17,4 +17,4 @@
             @include('layouts.menu')
         </ul>
     </nav>
-</div>
+</div> --}}

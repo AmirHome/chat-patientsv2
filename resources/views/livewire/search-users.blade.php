@@ -3,7 +3,7 @@
         <input type="search" class="form-control search-input login-group__input" id="searchContactForChat"
                placeholder="{{ __('messages.search') }}..." wire:model="searchTerm">
     </form>
-    <div class="form-group">
+    {{-- <div class="form-group">
         <div class="col-sm-12 d-flex justify-content-around">
             <div class="custom-control custom-checkbox">
                 <input name="new_contact_gender" value="1" type="checkbox" class="custom-control-input group-type not-checkbox" id="newContactMale" wire:model="male">
@@ -15,7 +15,7 @@
                 <label class="custom-control-label" for="newContactFemale">{{ __('messages.female') }}</label>
             </div>
         </div>
-    </div>
+    </div> --}}
     <div id="userListForAddPeople">
         <ul class="list-group user-list-chat-select list-with-filter" id="userListForChat">
             @foreach($users as $key => $value)

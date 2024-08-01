@@ -33,18 +33,21 @@
     <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
     @yield('css')
     <link rel="stylesheet" href="{{ asset('assets/css/custom-style.css') }}">
+    <link href="{{ asset('css/app.css') }}" rel="stylesheet" />
+
+
 </head>
-<body class="app header-fixed sidebar-fixed aside-menu-fixed sidebar-lg-show">
+<body class="app header-fixed sidebar-fixed aside-menu-fixed">
 <header class="app-header navbar">
-    <button class="navbar-toggler sidebar-toggler d-lg-none me-auto" type="button" data-toggle="sidebar-show">
-        <i class="fa fa-angle-right header-arrow-small" aria-hidden="true"></i>
-        <i class="fa fa-chevron-right header-arrow" aria-hidden="true"></i>
-    </button>
-    <button class="navbar-toggler sidebar-toggler d-md-down-none" type="button" data-toggle="sidebar-lg-show">
-        <i class="fa fa-angle-right header-arrow-small" aria-hidden="true"></i>
-        <i class="fa fa-chevron-right header-arrow" aria-hidden="true"></i>
-    </button>
+    <div class="navbar-brand ms-3">
+     <img src="{{ asset('img/clinics-logo.png') }}" alt="Logo Image" class="logo img-fluid">
+    </div>
     <ul class="nav navbar-nav ms-auto">
+          <li class="nav-item">
+             <a class="nav-link" href="http://patientsv2.clinics.com.tr:64000/admin" role="button" aria-label="Return to Patients" target="_blank">
+                <i class="fa fa-home return-patiens"></i>
+              </a>
+        </li>
         <li class="nav-item dropdown notification">
             <a class="nav-link notification__icon" data-bs-toggle="dropdown" href="#" role="button"
                aria-haspopup="true" aria-expanded="false">

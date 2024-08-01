@@ -9,6 +9,9 @@
     <link rel="stylesheet" href="{{ asset('css/login.css') }}">
 @endsection
 @section('content')
+ <header class="fixed-top bg-light p-3 mb-5">
+            <img src="{{ asset('img/clinics-logo.png') }}" alt="Logo Image" class="img-fluid">
+    </header>
     <div class="container">
         <div class="row justify-content-center">
             <div class="p-4 account-container w-100">
@@ -27,12 +30,7 @@
                             <form method="post" action="{{ url('/login') }}" id="loginForm" class="login-group__form">
                                 {{ csrf_field() }}
                                 <h1 class="login-group__title mb-2 text-center">{{ __('messages.login') }}</h1>
-                                <div class="d-flex justify-content-center pb-2">
-                                    <span class="me-2 login-group__sub-title">New Here?</span>
-                                    <a class="login-group__sub-title register-link active d-flex
-                                                    justify-content-center"
-                                       href="{{ url('/register') }}">{{ __('messages.register_now!') }}</a>
-                                </div>
+                                
                                 <p class="text-muted login-group__sub-title mb-4 text-center">{{ __('messages.sign_in_to_your_account') }}</p>
                                 <div class="form-group mb-4 login-group__sub-title">
                                     {!! Form::label('email', __('messages.email').':' )!!}<span class="red">*</span>
@@ -66,7 +64,7 @@
                                             class="text-end d-flex justify-content-end">
                                         <a class="btn btn-link px-0 py-0 login-group__sub-title register-link
                                                     text-decoration-none"
-                                           href="{{ url('/password/reset') }}">
+                                           href="http://patientsv2.test/password/reset" target="_blank">
                                             {{ __('messages.forgot_password?') }}
                                         </a>
                                     </div>

@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="{{ asset('assets/css/font-awesome.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/jquery.toast.min.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/custom-style.css') }}">
+    <link href="{{ asset('css/app.css') }}" rel="stylesheet" />
     @yield('page_css')
     @yield('css')
 </head>

@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="{{ asset('assets/css/simple-line-icons.css')}}">
 @endsection
 @section('content')
-    <div class="container">
+    {{-- <div class="container">
         <div class="row justify-content-center">
             <div class="p-4 account-container w-100">
                 <div class="card p-sm-4 p-3 login-group border-0">
@@ -43,5 +43,5 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> --}}
 @endsection

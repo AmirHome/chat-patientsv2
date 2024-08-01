@@ -1,0 +1,47 @@
+.btn {
+font-weight: 500 !important;
+}
+.dropzone {
+    border: 1px dashed rgba(145, 158, 171, 0.2) !important;
+    background-color: #F9FAFA !important;
+    border-radius: 5px;
+}
+.dropzone img{
+    width: 2vw;
+    height: auto;
+}
+.dropzone p {
+    color: #637381;
+    font-size: 0.875rem;
+}
+.close  {
+    padding-right: 40px !important;
+    padding-top: 29px !important;
+}
+.preview-message{
+    border: none !important;
+}
+#btnSave{
+    background-color: rgb(69, 79, 91) !important;
+    outline: none !important;
+    box-shadow: none !important;
+    border: none !important;
+}
+.sidebar-fixed:not(.sidebar-lg-show) .app-footer, .sidebar-fixed:not(.sidebar-lg-show) .main {
+        margin-left: 0px !important;
+ }
+ .logo {
+    max-width: 100px;
+ }
+.return-patiens{
+      font-size: 26px;
+      padding-bottom: 2px;
+ }
+ .fixed-top {
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: auto !important; 
+    padding: 0.5rem 1rem !important;
+    background-color: #f5f8fa !important;
+}
