@@ -9,11 +9,12 @@
     <link rel="stylesheet" href="{{ asset('css/login.css') }}">
 @endsection
 @section('content')
- <header class="fixed-top bg-light mb-5 ms-3">
-            <img src="{{ asset('img/clinics-login-logo.png') }}" alt="Logo Image" class="img-fluid" width="150px">
-    </header>
-    <div class="container">
-        <div class="row justify-content-center">
+<header class="fixed-top bg-light mb-5 ms-3 d-flex align-items-center">
+    <img src="{{ asset('img/clinics-logo.png') }}" alt="Logo Image" class="img-fluid logo-img" width="150px">
+    <img src="{{ asset('img/clinics-login-logo.png') }}" alt="Logo Image" class="img-fluid login-logo-img" width="70px">
+</header>
+    <div class="container" >
+        <div class="row justify-content-center mt-5 mb-5">
             <div class="p-4 account-container w-100">
                 <div class="card-group login-group overflow-hidden">
                     <div class="card p-sm-2 mb-0 login-group__card">
@@ -62,8 +63,7 @@
                                     </div>
                                     <div
                                             class="text-end d-flex justify-content-end">
-                                        <a class="btn btn-link px-0 py-0 login-group__sub-title register-link
-                                                    text-decoration-none"
+                                        <a class="btn btn-link px-0 py-0 login-group__sub-title register-link text-decoration-none"
                                            href="http://patientsv2.clinics.com.tr:64000/password/reset" target="_blank">
                                             {{ __('messages.forgot_password?') }}
                                         </a>
