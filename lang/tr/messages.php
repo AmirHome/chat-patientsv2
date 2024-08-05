@@ -10,11 +10,12 @@ return [
     */
 
     //random words
+    'connect_with_zoom' => 'Zoom ile Bağlan',
     'to' => '-e',
     'N/A' => 'Yok',
     'back' => 'Geri',
     'email_verified' => 'E-posta Doğrulandı',
-    'impersonate' => 'kimliğine bürün',
+    'impersonate' => 'Kişileştir',
     'group_icon' => 'Grup Simgesi',
 
     //app.blade keys
@@ -26,7 +27,7 @@ return [
     'settings' => 'Ayarlar',
     'change_password' => 'Şifre değiştir',
     'set_custom_status' => 'Özel Durumu Ayarla',
-    'whats_your_status' => 'Durumun nedir?',
+    'whats_your_status' => 'Durumunuz nedir?',
 
     //menu.blade keys
     'conversations' => 'Konuşmalar',
@@ -39,14 +40,14 @@ return [
     'sign_in_to_your_account' => 'Hesabınıza giriş yapın',
     'remember_me' => 'Beni hatırla',
     'forgot_password?' => 'Parolanızı mı unuttunuz?',
-    'sign_up' => 'kaydol',
+    'sign_up' => 'Kayıt Ol',
     'sign_up_msg' => 'Sadece birkaç saniye içinde, kayıt ile bir hesap oluşturabilir ve sohbet hizmetlerimizi kullanmaya başlayabilirsiniz.
                                  Kayıt tamamen ücretsizdir ve dünya çapında açıktır.',
-    'register_now!' => 'Şimdi üye Ol!',
+    'register_now!' => 'Şimdi Üye Ol!',
 
     //register.blade keys
     'register' => 'Kayıt ol',
-    'create_your_account' => 'hesabını oluştur',
+    'create_your_account' => 'Hesap Oluştur',
     'already_have_membership' => 'Zaten üyeliğim var',
 
     // passoword/email.blade keys
@@ -57,7 +58,7 @@ return [
     'reset_password' => 'Şifreyi yenile',
 
     // passoword/reset.blade keys
-    'enter_email_and_new_password' => 'E-posta ve yeni şifre girin',
+    'enter_email_and_new_password' => 'E-posta ve yeni şifre giriniz',
     'reset' => 'Sıfırla',
 
     //auth form placeholders
@@ -70,7 +71,7 @@ return [
 
     // email/account_varification.blade keys
     'dear' => 'Sayın',
-    'click_here_activate_account' => 'Hesabınızı etkinleştirmek için aşağıdaki bağlantıyı tıklayın.',
+    'click_here_activate_account' => 'Hesabınızı etkinleştirmek için aşağıdaki bağlantıya tıklayın.',
     'activate_your_account' => 'Hesabınızı etkinleştirin',
     'thank_you_for_using' => 'Kullandığın için teşekkürler',
     'chat_logo' => 'Sohbet Logosu',
@@ -81,14 +82,14 @@ return [
     'if_you_did_not_request_a_password_reset' => 'Parola sıfırlama talebinde bulunmadıysanız, başka bir işlem yapmanız gerekmez.',
 
     //chat files
-    'person_image' => 'kişi görüntüsü',
+    'person_image' => 'Kişi Fotoğrafı',
     'testimonials' => 'Görüşler',
     'social_login' => 'Sosyal Giriş',
     'block_unblock' => 'Engellemeyi Kaldır',
     'blocked_users' => 'Engellenmiş kullanıcılar',
     'message_delete' => 'Mesajın Silinmesi',
     'webpush' => 'Webpush',
-    'online' => 'İnternet üzerinden',
+    'online' => 'Çevrimiçi',
     'offline' => 'Çevrimdışı',
     'search_messages' => 'Mesajları ara',
     'search' => 'Arama',
@@ -101,7 +102,7 @@ return [
     'no_group_yet' => 'Henüz grup oluşturulmadı ...',
     'no_user_found' => 'Kullanıcı bulunamadı...',
     'no_blocked_user_found' => 'Engellenen kullanıcı bulunamadı ...',
-    'about' => 'hakkında',
+    'about' => 'Hakkında',
     'last_seen_today' => 'Son görülme bugün',
     'dummy_about' => 'Son görülme bugün',
     'dummy_phone_no' => '(555) 555 55 55',
@@ -109,14 +110,14 @@ return [
     'bio' => 'Bio',
     'media' => 'Medya',
     'block' => 'Blok',
-    'unblock' => 'engeli kaldırmak',
+    'unblock' => 'Engellemeyi Kaldır',
     'mute' => 'Sessiz',
     'new_conversation' => 'Yeni Görüşme',
     'chat' => 'Sohbet',
     'back_to_conversations' => 'Konuşmalara Geri Dön',
     'create_new_group' => 'Yeni Grup',
-    'enter_group_name' => 'Grup adını girin',
-    'enter_group_desc' => 'Grup açıklamasını girin',
+    'enter_group_name' => 'Grup adını giriniz',
+    'enter_group_desc' => 'Grup açıklamasını giriniz',
     'participants' => 'Üyeler',
     'discription' => 'Tanımlama',
     'no_users_blocked' => 'Henüz kullanıcı engellenmedi ...',
@@ -148,7 +149,7 @@ return [
     'youtube_integration' => 'Youtube Entegrasyonu',
     'user_presence' => 'Kullanıcı Varlığı',
     'last_Seen' => 'Son görülen',
-    'read_receipts' => 'Makbuzları Okuyun',
+    'read_receipts' => 'Makbuzları Okuyunuz',
 
     'Testimonials' => 'Görüşler',
     'what_customers_say' => 'Müşteriler ne diyor?',
@@ -169,26 +170,22 @@ return [
     'linkedin' => 'Linkedin',
     'github' => 'Github',
     'made_with' => 'İle yapılan',
-    'by_infyom_technologies' => 'tarafından '.getCompanyName(),
-    'by_infyom_technologies_desc' => 'Biz, Web & amp; Mobil. Biz
-                         sadece açık kaynak teknolojilerine katkıda bulunmayı seviyorum. Her zaman bir şeyler inşa etmeye çalışırız.
-                         yardım eder
-                         geliştiriciler zamandan tasarruf etmelerini sağlar. böylece arkadaşlarıyla biraz daha fazla zaman geçirebilirler ve
-                         aile.',
+    'by_infyom_technologies' => ''.getCompanyName().' tarafından ',
+    'by_infyom_technologies_desc' => 'Biz, Web & amp; Mobil. Biz açık kaynaklı teknolojilere katkıda bulunmayı seviyoruz. Her zaman geliştiricilere yardım eden ve zaman kazanıp aileleri ve arkadaşları için zaman ayırabilecekleri yapılar oluşturmaya çalışıyoruz.',
 
     //file_pload.blade
-    'upload_files' => 'Dosyaları yükle',
+    'upload_files' => 'Dosyaları Yükle',
     "upload_instruction" => "Yüklemek istediğiniz dosyaları buraya sürükleyin veya tıklayın",
     'upload' => 'Yükle',
-    'cancel' => 'İptal etmek',
+    'cancel' => 'İptal Et',
 
     //users files
-    'new_user' => 'Yeni kullanıcı',
-    'edit_user' => 'kullanıcıyı düzenle',
+    'new_user' => 'Yeni Kullanıcı',
+    'edit_user' => 'Kullanıcıyı Düzenle',
     'is_active' => 'Aktif',
     'role' => 'Rol',
-    'upload_photo' => 'Fotoğraf yükle',
-    'save' => 'Kayıt etmek',
+    'upload_photo' => 'Fotoğraf Yükle',
+    'save' => 'Kayıt Et',
     'back_to_admin' => 'Yöneticiye Geri Dön',
     'name' => 'İsim Soyisim',
     'action' => 'Aksiyon',
@@ -197,13 +194,13 @@ return [
     'new_role' => 'Yeni rol',
     'edit_role' => 'Rolü Düzenle',
     'are_you_sure' => 'Emin misiniz?',
-    'permissions' => 'izinler',
+    'permissions' => 'İzinler',
     'role_details' => 'Rol Ayrıntıları',
 
     //profile.blade
     'edit_profile' => 'Profili Düzenle',
-    'phone_number' => 'Telefon numarası',
-    'processing' => 'İşleme...',
+    'phone_number' => 'Telefon Numarası',
+    'processing' => 'İşleniyor...',
     'gender' => 'Cinsiyet',
     'male' => 'Erkek',
     'female' => 'Kadın',
@@ -213,19 +210,19 @@ return [
         'groups' => 'Gruplar',
         'create_group' => 'Yeni Grup',
         'edit_group' => 'Grubu Düzenle',
-        'name' => 'Grup ismi',
+        'name' => 'Grup İsmi',
         'description' => 'Açıklama',
         'image' => 'Resim',
         'type' => 'Grup Türü',
         'privacy' => 'Gizlilik',
         'open' => 'Açık',
         'close' => 'Kapat',
-        'private' => 'Private',
-        'public' => 'halka açık',
+        'private' => 'Özel',
+        'public' => 'Genel',
         'members' => 'Üyeler',
-        'leave_group' => 'Gruptan ayrıl',
+        'leave_group' => 'Gruptan Ayrıl',
         'delete_group' => 'Grubu Sil',
-        'choose_file' => 'Dosyanızı seçin',
+        'choose_file' => 'Dosyanızı Seçin',
         'new_conversations' => 'Yeni Sohbetler',
 
     ],
@@ -240,7 +237,7 @@ return [
     'show_profile_name_on_the_chat' => 'Sohbette Profil Adını Göster',
 
     'report' => 'Bildiri',
-    'report_user' => 'Kullanıcıyı bildir',
+    'report_user' => 'Kullanıcıyı Bildir',
     'notes' => 'Notlar:',
     'reported_by' => 'Tarafından rapor edildi',
     'reported_to' => 'A raporlandı',
@@ -267,25 +264,30 @@ return [
     'chats' => [
         'no_media_share_yet' => 'Henüz medya paylaşılmadı ...',
         'toggle' => 'Değiştir',
-        'upload_image' => 'Fotoğraf yükleniyor',
-        'cancel' => 'İptal etmek',
+        'upload_image' => 'Fotoğraf yükleniyor...',
+        'cancel' => 'İptal Et',
         'send' => 'Gönder',
-        'add_members' => 'Üye ekle',
-        'add_to_group' => 'Gruba ekle',
+        'add_members' => 'Üye Ekle',
+        'add_to_group' => 'Gruba Ekle',
         'active_chat' => 'Aktif Sohbet',
         'archive_chat' => 'Arşiv sohbeti',
-        'delete' => 'sil',
+        'delete' => 'Sil',
         'load_more' => 'Daha fazla yükle',
         'test_message' => 'Deneme mesajı',
         'read_by' => 'Okuyan',
         'reminder' => 'Kalan',
-        'read' => 'Okuyun',
-        'delivered' => 'Teslim edildi',
+        'read' => 'Okundu',
+        'delivered' => 'Teslim Edildi',
+        "group_details_updated_by" => "Grup ayrıntıları yönetici tarafından güncellendi",//ek
+        "added" => "ekledi",//ek
+        "removed" => "çıkardı",//ek
+        "created_group"  => "grubu oluşturdu",//ek
+        "yesterday" => "Dün",//ek
     ],
 
     // layouts app related file
     'notifications' => 'Bildirimler',
-    'read_all' => 'Hepsini oku',
+    'read_all' => 'Hepsini Oku',
     'no_notification_yet' => 'Henüz Bildirim Yok ...',
 
     //live wire related files
@@ -306,7 +308,7 @@ return [
     'home' => [
         'admin_panel_manage_members' => 'Üyeleri yönetmek için Süper Yönetici paneli',
         'real_time_massaging' => 'Gerçek zamanlı mesajlaşma',
-        '1-1_chat' => '1-1 Sohbet',
+        '1-1_chat' => 'Özel Sohbet',
         'group_chat' => 'Grup Sohbeti',
         'conversation_unread_msg_count' => 'Okunmamış mesaj içeren görüşme listesi sayısı',
         'private_public_groups' => 'Özel ve Genel Gruplar',
@@ -323,15 +325,15 @@ return [
     //meeting
     'meeting' => [
         'meeting_title' => 'Toplantı Başlığı',
-        'meeting_date' => 'Buluşma tarihi',
+        'meeting_date' => 'Toplantı tarihi',
         'time_zone' => 'Saat dilimi',
         'meeting_duration' => 'Toplantı Süresi',
         'meeting_duration_minutes' => 'Toplantı Süresi (Dakika)',
-        'staff_list' => 'Personel listesi',
+        'staff_list' => 'Personel Listesi',
         'host_video' => 'Video Barındırma',
         'client_video' => 'Müşteri Videosu',
         'enabled' => 'Etkin',
-        'disabled' => 'Devre dışı',
+        'disabled' => 'Devre Dışı',
         'description' => 'Açıklama',
     ],
 
@@ -340,18 +342,18 @@ return [
         'type_msg' => 'Mesaj yazın...',
         'select_role' => 'Rol Seçin',
         'confirm_archive' => 'Bu kullanıcıyı arşivlemek için "arşiv" yazın',
-        'are_you_sure' => 'Emin misin?',
-        'want_to_archive' => 'bunu arşivlemek istiyorum',
-        'after_archive' => '?Arşivlendikten sonra tüm konuşmaları arşivlenecektir.',
+        'are_you_sure' => 'Emin misiniz?',
+        'want_to_archive' => 'Bunu arşivlemek istiyor musunuz?',
+        'after_archive' => '?Arşivlendikten sonra bu kullanıcı arşivlenir ve arşiv sayfasında görüntülenir.',
         'you_need_to' => '"Arşiv" yazmanız gerekiyor',
-        'user' => 'kullanıcı',
-        'select_time_zone' => 'Saat dilimini seçin',
+        'user' => 'Kullanıcı',
+        'select_time_zone' => 'Saat dilimini seçiniz',
         'select_member' => 'Üye Seç',
         'status_all' => 'Durum Seç (TÜMÜ)',
         'select_privacy' => 'Gizlilik Seçin',
         'select_status' => 'Durum Seç',
         'want_to_delete_this' => 'Bunu silmek istediğinizden emin misiniz?',
-        'write_delete' => 'Bu toplantıyı silmek için "sil" yazın',
+        'write_delete' => 'Bu toplantıyı silmek için "sil" yazınız.',
         'need_to_write_delete' => '"Sil" yazmanız gerekiyor',
         'meeting' => 'Toplantı',
         'delete_this_role' => 'Bu "Rolü" silmek istediğinizden emin misiniz ?',
@@ -375,9 +377,9 @@ return [
         'notes_required' => 'Notlar alanı zorunludur.',
         'no_bio_added_ye' => 'Henüz bir bio eklenmedi...',
         'yes' => 'Evet',
-        'cancel' => 'iptal',
+        'cancel' => 'İptal',
         'delete_message' => 'Mesajı Sil',
-        'delete_for_everyone' => 'Herkese Sil',
+        'delete_for_everyone' => 'Herkesten Sil',
         'reply' => 'Cevapla',
         'info' => 'Bilgi',
         'message_info' => 'Mesaj Bilgisi',
@@ -402,13 +404,13 @@ return [
         'user_updated_successfully' => 'Kullanıcı başarıyla güncellendi.',
         'profile_update' => 'Profil başarıyla güncellendi.',
         'user_status' => 'Kullanıcı durumu başarıyla güncellendi.',
-        'only_my_contact_can_chat' => 'Sadece İletişimlerim benimle sohbet edebilir',
+        'only_my_contact_can_chat' => 'Sadece Rehberimdekiler benimle sohbet edebilir',
         'error' => 'Hata',
         'role_saved_successfully' => 'Rol başarıyla kaydedildi.',
         'success' => 'Başarılı',
         'role_deleted' => 'Rol Başarıyla Silindi.',
         'your_private_conservation' => 'Özel sohbetiniz',
-        'join_private_conversation' => 'Bu cihazda özel sohbet katıl',
+        'join_private_conversation' => 'Özel sohbete katıl',
         'wants_to_chat_with_you' => 'seninle sohbet etmek istiyor.',
         'start_conversation' => 'Sohbeti Başlat',
         'start_conversation_with' => 'İle sohbet başlat',
@@ -423,7 +425,7 @@ return [
         'you_have_send_request_to_this_user' => 'Bu kullanıcıya istek gönderdiniz.',
         'no_phone_added_yet' => 'henüz telefon eklenmedi...',
         'no_common_group' => 'ortak grup yok...',
-        'you_want_to_unblock_this_user' => 'bu kullanıcının engellemesini kaldırmak istiyorsunuz',
+        'you_want_to_unblock_this_user' => 'Bu kullanıcının engellini kaldırmak istiyor musunuz?',
         'no_description_added_yet' => 'henüz açıklama eklenmedi...',
         'you_want_to' => 'you_want_to',
         'this_user' => 'bu kullanıcı?',
@@ -441,7 +443,7 @@ return [
         'remove_profile_image' => 'Evet\'e tıkladığınızda profil resminiz kaldırılır.',
         'anyone_can_chat_with_me' => 'Herkes benimle sohbet edebilir',
         'decline' => 'Reddetmek',
-        'accept' => 'Kabul etmek',
+        'accept' => 'Kabul Et',
         'now' => 'Şimdi',
         'chat_features' => 'Sohbet Özellikleri',
         'comment' => 'Yorum',
@@ -449,8 +451,8 @@ return [
         'title' => 'Başlık',
         'sub_title' => 'Alt Başlık',
         'footer' => 'Alt Bilgi',
-        'update_password' => 'Şifre başarıyla sıfırlandı.',
-        'unarchive' => 'Arşivden kaldır',
+        'update_password' => 'Şifre başarıyla güncellendi.',
+        'unarchive' => 'Arşivden Kaldır',
         'chat_with' => 'ile sohbet et',
         'delete_this_message' => 'Bu mesaj silinsin mi?',
         'remaining' => 'geriye kalan',

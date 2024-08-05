@@ -14,6 +14,8 @@ return [
     'to' => 'to',
     'N/A' => 'N/A',
     'back' => 'Back',
+    'email_verified' => 'email verified',
+    'impersonate' => 'Impersonate',
     'group_icon' => 'Group Icon',
 
     //app.blade keys
@@ -81,7 +83,7 @@ return [
     'if_you_did_not_request_a_password_reset' => 'If you did not request a password reset, no further action is required.',
 
     //chat files
-    'person_image' => 'person image',
+    'person_image' => 'Person Image',
     'testimonials' => 'Testimonials',
     'social_login' => 'Social Login',
     'block_unblock' => 'Block Unblock',
@@ -284,6 +286,11 @@ return [
         'reminder' => 'Remaining',
         'read' => 'Read',
         'delivered' => 'Delivered',
+        "group_details_updated_by" => "Group details updated by ",//ek
+        "added" => "added",//ek
+        "removed" => "removed",//ek
+        "created_group"  => "created group",//ek
+        "yesterday" => "Yesterday",//ek
     ],
 
     // layouts app related file
@@ -352,7 +359,7 @@ return [
         'select_role' => 'Select Role',
         'confirm_archive' => 'Write "archive" to archive this user',
         'are_you_sure' => 'Are you sure?',
-        'want_to_archive' => 'want to archive this',
+        'want_to_archive' => 'Want to archive this',
         'after_archive' => '? After archive all its conversations will be archive.',
         'you_need_to' => 'You need to write "archive"',
         'user' => 'User',
@@ -380,7 +387,7 @@ return [
         'notes_required' => 'The notes field is required.',
         'no_bio_added_ye' => ' No bio added yet...',
         'yes' => 'Yes',
-        'cancel' => 'cancel',
+        'cancel' => 'Cancel',
         'delete_message' => 'Delete Message',
         'delete_for_everyone' => 'Delete For Everyone',
         'reply' => 'Reply',
@@ -458,7 +465,7 @@ return [
         'title' => 'Title',
         'sub_title' => 'Sub Title',
         'footer' => 'Footer',
-        'update_password' => 'Password has been reset successfully.',
+        'update_password' => 'Password has been updated successfully.',
         'unarchive' => 'Unarchive',
         'chat_with' => 'chat with',
         'delete_this_message' => 'Delete this message?',
