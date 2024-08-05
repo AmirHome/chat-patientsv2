@@ -25,10 +25,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('home.index');
-    // return redirect('login');
-});
+Route::get('/', [HomeController::class, 'index']);
+
 
 Auth::routes();
 Route::get('activate', [AuthController::class, 'verifyAccount']);
