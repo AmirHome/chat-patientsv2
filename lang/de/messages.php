@@ -177,7 +177,7 @@ return [
 
     //file_pload.blade
     'upload_files' => 'Daten hochladen',
-    'upload_instructions' => 'Ziehen Sie Dateien hierher oder klicken Sie, um Dateien hochzuladen',
+    'upload_instruction' => 'Ziehen Sie Dateien hierher oder klicken Sie, um Dateien hochzuladen',
     'upload'=> 'Hochladen',
     'cancel' => 'Stornieren',
 

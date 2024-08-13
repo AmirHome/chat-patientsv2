@@ -178,7 +178,7 @@ return [
 
     //file_pload.blade
     'upload_files' => 'تحميل الملفات',
-    'upload_instructions' => 'اسحب وأسقط الملفات هنا أو انقر لتحميل.',
+    'upload_instruction' => 'اسحب وأسقط الملفات هنا أو انقر لتحميل.',
     'upload' => 'تحميل',
     'cancel' => 'يلغي',
 

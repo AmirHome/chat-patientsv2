@@ -180,7 +180,7 @@ return [
 
     //file_pload.blade
     'upload_files' => 'Upload Files',
-    'upload_instructions' => 'Drag or click the files you want to upload here',
+    'upload_instruction' => 'Drag or click the files you want to upload here',
     'upload' => 'Upload',
     'cancel' => 'Cancel',
 
