@@ -64,7 +64,7 @@
                                     <div
                                             class="text-end d-flex justify-content-end">
                                         <a class="btn btn-link px-0 py-0 login-group__sub-title register-link text-decoration-none"
-                                           href="http://patientsv2.clinics.com.tr:64000/password/reset" target="_blank">
+                                           href="http://patientsv2.clinics.com.tr/password/reset" target="_blank">
                                             {{ __('messages.forgot_password?') }}
                                         </a>
                                     </div>
