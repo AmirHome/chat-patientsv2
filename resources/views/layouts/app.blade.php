@@ -44,7 +44,7 @@
     </div>
     <ul class="nav navbar-nav ms-auto">
           <li class="nav-item">
-             <a class="nav-link" href="patientsv2.clinics.com.tr" role="button" aria-label="Return to Patients" target="_blank">
+             <a class="nav-link" href="http://patientsv2.clinics.com.tr" role="button" aria-label="Return to Patients" target="_blank">
                 <i class="fa fa-home return-patiens"></i>
               </a>
         </li>
