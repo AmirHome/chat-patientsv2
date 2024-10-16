@@ -285,6 +285,20 @@ class User extends Authenticatable
         'role_id.required' => 'Please select user role',
     ];
 
+    public static function boot()
+    {
+        parent::boot();
+
+        static::addGlobalScope('isActive', function ($query) {
+            $query->where('is_active', 1);
+        });
+    }
+
+    public function scopeIsActive($query)
+    {
+        return $query->where('is_active', 1);
+    }
+
     public function getPhotoUrlAttribute($value): string
     {
         if (! empty($value)) {
